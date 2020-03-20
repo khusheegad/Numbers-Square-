@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{int a,b,ran,i,j,k,first;
+ cin>>a>>b;
+ for( i=0;i<a;i++)
+ {   if(i==0)
+ {ran=b;
+  first=ran;}
+  else
+  {first=first+((2*(i+1))-1);
+  ran=first;}
+  cout<<ran<<" ";
+     for( j=0;j<i;j++)
+     {ran=ran-1;
+         cout<<ran<<" ";}
+     for( k=j;k<a-1;k++)
+     {ran=ran+2*(k+1)-1;
+     cout<<ran<<" ";}
+     cout<<endl; //line change
+ }
+
+    return 0;
+}
